@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquise no Google</title>
+</head>
+<body>
+    <h3>Pesquisando no Google</h3>
+    <form action="http://www.google.com.br/search" method="get">
+        <label for="q">O que deseja pesquisar?</label>
+        <input type="text" id="q" name="q" placeholder="Frutas, Joias....">
+        <input type="submit" value="Pesquisar">
+    </form>  
+    <hr>
+    <h3>Pesquisando no Google validando o campo de pesquisa</h3>
+    <form action="http://www.google.com.br/search" method="get">
+        <label for="q">O que deseja pesquisar?</label>
+        <input type="text" id="q" name="q" placeholder="Frutas, Joias...." required>
+        <input type="submit" value="Pesquisar">
+    </form>
+    <hr>
+    <h3>Pesquisando no Google Validando e-mail</h3>
+    <form action="http://www.google.com.br/search" method="get">
+        <label for="q">O que deseja pesquisar?</label>
+        <input type="email" id="q" name="q" placeholder="Frutas, Joias...." required>
+        <input type="submit" value="Pesquisar">
+    </form>
+    <hr>
+    <h3>Pesquisando no Google somente números.</h3>
+    <form action="http://www.google.com.br/search" method="get">
+        <label for="q">O que deseja pesquisar?</label>
+        <input type="number" id="q" name="q" placeholder="1, 2, 3" required>
+        <input type="submit" value="Pesquisar">
+    </form>
+    <hr>
+    <h3>Pesquisando no Google somente números minumo e máximo.</h3>
+    <form action="http://www.google.com.br/search" method="get">
+        <label for="q">O que deseja pesquisar?</label>
+        <input type="number" id="q" name="q" placeholder="Frutas, Joias...." min="5" max="20" required>
+        <input type="submit" value="Pesquisar">
+    </form>
+</body>
+</html>
